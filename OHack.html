@@ -1,34 +1,51 @@
 <head>
   <title>ICAN AZ App</title>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <div class = "header">
-    <img src="http://www.taohealingcenters.org/images/ican.jpg" alt="ICAN Logo"/>
-    <link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
-    </script>
-    <script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <div class = "container-fluid">
+    <div class = "header">
+      <img src="http://www.taohealingcenters.org/images/ican.jpg" alt="ICAN Logo"/>
+      <link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+      </script>
+      <script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </div>
+    <div class = "row">
+    <div class = "nav">
+      <ul>
+        <div class = "col-xs-3">
+        <li>
+          <a href="*" id = "homeButton">Home</a>
+        </li>
+      </div>
+      <div class = "col-xs-3">
+        <li>
+          <a href = "*" id = "newsButton">News</a>
+        </li>
+      </div>
+      <div class = "col-xs-3">
+        <li>
+          <a href = "*" id = "calendarButton">Calendar</a>
+        </li>
+      </div>
+      <div class = "col-xs-3">
+        <li>
+          <a href = "*" id = "contactButton">Contact Information</a>
+        </li>
+      </div>
+      <div class = "row">
+      <div class = "col-xs-3">
+        <li>
+          Español
+        </li>
+      </div>
+    </div>
+      </ul>
+    </div>
   </div>
-  <div class = "nav">
-    <ul>
-      <li>
-        <a href="*" id = "homeButton">Home</a>
-      </li>
-      <li>
-        <a href = "*" id = "newsButton">News</a>
-      </li>
-      <li>
-        <a href = "*" id = "calendarButton">Calendar</a>
-      </li>
-      <li>
-        <a href = "*" id = "contactButton">Contact Information</a>
-      </li>
-      <li>
-        Español
-      </li>
-    </ul>
-  </div>
+</div>
 </body>
 
 <template name="menu click">
