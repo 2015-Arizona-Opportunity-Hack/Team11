@@ -17,6 +17,11 @@ a.nav {
 }
 li {
   display: inline;
+  float: left;
+}
+a:hover{
+  background-color: white;
+  color: black;
 }
 .header {
   padding: 5px;
