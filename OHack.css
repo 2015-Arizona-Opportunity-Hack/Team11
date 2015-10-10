@@ -5,11 +5,34 @@ body {
   background-color: white;
 }
 ul {
-
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
-a {
+a.nav {
   text-decoration: none;
+  display: block;
+  width: 70px;
 }
 li {
-  style: none;
+  display: inline;
+}
+ .nav {
+
+ }
+#homeButton{
+  background-color: #1568B4;
+  color: white;
+}
+#newsButton{
+  background-color: #BED73E;
+  color: white;
+}
+#calendarButton{
+  background-color: #EE3B34;
+  color: white;
+}
+#contactButton{
+  background-color:  #1568B4;
+  color: white;
 }
