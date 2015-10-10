@@ -1,6 +1,7 @@
 /* CSS declarations go here */
+
 body {
-  font-family: sans-serif;
+  font-family: helvetica, sans-serif;
   font-size: 12px;
   background-color: white;
 }
