@@ -18,22 +18,29 @@ a.nav {
 li {
   display: inline;
 }
+.header {
+  padding: 5px;
+}
  .nav {
-
+   text-decoration: none;
  }
 #homeButton{
   background-color: #1568B4;
   color: white;
+  padding: 5px;
 }
 #newsButton{
   background-color: #BED73E;
   color: white;
+  padding: 5px;
 }
 #calendarButton{
   background-color: #EE3B34;
   color: white;
+  padding: 5px;
 }
 #contactButton{
   background-color:  #1568B4;
   color: white;
+  padding: 5px;
 }
