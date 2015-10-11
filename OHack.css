@@ -23,11 +23,13 @@ ul {
   margin: 0px;
   padding: 0px;
 }
-a.nav {
+.nav > li > a {
   text-decoration: none;
   display: block;
-  width: 70px;
+  /*width: 70px;*/
+  color: #FFF !important;
 }
+
 li {
   display: inline;
   float: left;
