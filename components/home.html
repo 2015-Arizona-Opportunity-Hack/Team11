@@ -1,9 +1,19 @@
 <template name="home">
   <!-- {{#if currentUser}} -->
   <form class="new-alert">
-    <input type="text" name="text" placeholder="Type to send new notification" style="width: 500px;" />
-    <!-- <textarea rows='4' cols='70' placeholder="Type to send new notification"></textarea> -->
-    <input type="submit">
+    <div class="col-lg-12">
+      <input type="text" name="text" placeholder="Type to send new notification" style="width: 100%;" />
+    </div>
+    <div class="col-lg-12">
+      <div class="col-md-6 pull-left">
+        <input type="checkbox" name="urgent" value="urgent?"/> urgent
+      </div>
+      <div class="col-md-6 pull-right">
+        <input type="submit"/>
+      </div>
+    </div>
+    <br>
+    <br>
   </form>
   <!-- {{/if}} -->
   <div class="notificationBox">

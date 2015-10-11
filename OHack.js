@@ -31,9 +31,9 @@ if (Meteor.isClient) {
   });
 
   Template.home.events({
-    "submit new-alert": function(event){
-      // event.preventDefault();
-      var text = event.target.text.value;
+    "submit .new-alert": function(event){
+      event.preventDefault();
+      var text = event.target.textarea.value;
       alert(text);
       Alerts.insert({
         text: text,
