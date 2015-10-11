@@ -73,3 +73,19 @@ Router.configure({
 Router.route('/', function(){
   this.render('home');
 });
+
+Router.route('/news', function(){
+  this.render('news');
+});
+
+Router.route('/calendar', function(){
+  this.render('calendar');
+});
+
+Router.route('/contact', function(){
+  this.render('contact');
+});
+
+Router.route('/*', function(){
+  this.render('spanish');
+});
