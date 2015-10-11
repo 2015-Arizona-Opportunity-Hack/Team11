@@ -52,6 +52,9 @@
       </form>
     {{/if}}
 
+    {{#each alerts}}
+      {{> alert}}
+    {{/each}}
     <a class="twitter-timeline" href="https://twitter.com/ICANChandler"
      data-widget-id="653046356978741248"
      width="auto"
@@ -85,3 +88,8 @@ This is not an option for ICAN. We exist to combat these issues and build strong
     </nav>
   </div>
 </body>
+
+<template name="alert">
+  <p>{{text}}</p>
+  <p>{{createdAt}}</p>
+</template>
