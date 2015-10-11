@@ -50,3 +50,9 @@ a:hover{
   color: white;
   padding: 5px;
 }
+
+#notificationBox {
+  border: 1em solid black;
+  padding: 1em;
+  
+}
