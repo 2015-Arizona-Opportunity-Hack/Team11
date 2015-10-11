@@ -5,9 +5,9 @@ body {
   font-size: 12px;
   /*background-color: white;*/
 
-  background-color: #315481;
-  /*background-image: linear-gradient(to bottom, #315481, #918e82 100%);
-*/background-image: url("https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xfa1/t31.0-8/11115609_10153321651556209_1710896137069926848_o.jpg");
+  background-color: #1568B4;
+  background-image: linear-gradient(to bottom, #1568B4, #1568B4 100%);
+
   background-attachment: fixed;
 
 }
