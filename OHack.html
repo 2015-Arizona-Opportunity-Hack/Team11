@@ -10,9 +10,9 @@
   <script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   <div class = "container-fluid container">
-        <div class = "header">
-          <img src="http://www.taohealingcenters.org/images/ican.jpg" alt="ICAN Logo"/>
-        </div>
+    <div class = "header">
+      <img src="http://www.taohealingcenters.org/images/ican.jpg" alt="ICAN Logo"/>
+    </div>
 
     <nav class = "navbar navbar-default">
       <ul class = "nav navbar-nav">
@@ -38,24 +38,27 @@
     </nav>
 
     {{#if currentUser}}
-      <form class="new-task">
-        <input type="text" name="text" placeholder="Type to send new notification" style="width: 500px;" /><button>Send Notification</button>
-      </form>
+    <form class="new-task">
+      <input type="text" name="text" placeholder="Type to send new notification" style="width: 500px;" /><button>Send Notification</button>
+    </form>
     {{/if}}
 
-    {{#each alerts}}
-      {{> alert}}
-    {{/each}}
+
 
     <div class="notificationBox">
       <p style = "font-size: 10px"> Notifications:
       </p>
+      <ul>
+        {{#each alerts}}
+        {{> alert}}
+        {{/each}}
+      </ul>
     </div>
     <h3>Welcome Students and Parents!</h3>
     <h4>On this website, you'll be able to access... </h4>
     <ul>
       <li>
-      <a href="*" style = "color: black;">  Any non-urgent news about the program </a>
+        Any urgent and<a href="*" style = "color: black;"> non-urgent news about the program </a>
       </li>
       <li>
         <a href = "*" style = "color: black;"> Our Events Calendar </a>
@@ -68,7 +71,7 @@
     <p>ICAN goes beyond being just an after-school program for at-risk youth. ICAN works with youth on the critical skills they need to be productive and responsible members of the community.
     </p>
     <p>8 out of 10 young people in the areas we serve are living in extreme poverty. Four of those children will go to bed hungry at night and eight will be using drugs or alcohol to cope with the harsh realities they face. Joining gangs becomes a more viable choice than graduation in the community we serve.
-This is not an option for ICAN. We exist to combat these issues and build strong futures for them and for our community.
+      This is not an option for ICAN. We exist to combat these issues and build strong futures for them and for our community.
     </p>
     <div class = "row">
       <div class = "calendarWidget col-xs-6 col-md-6">
@@ -124,6 +127,14 @@ This is not an option for ICAN. We exist to combat these issues and build strong
 </body>
 
 <template name="alert">
-  <p>{{text}}</p>
+  <li>
+    <p style = "font-size: 10px; word-wrap: normal; color: black;">{{text}}</p>
+    <p style = "font-size: 9px; word-wrap: normal; color: lightgray;">{{createdAt}}</p>
+  </li>
+    </template>
+
+<template name = "news">
+  <h3 style = "font-size: ">{{title}}</h3>
+  <p style = "font-size: 12px;">{{text}}</p>
   <p>{{createdAt}}</p>
 </template>
