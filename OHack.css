@@ -74,6 +74,11 @@ header {
   padding: 5px;
 }
 
+#spanishButton{
+  background-color: #BED73E;
+  padding: 5px;
+}
+
 .notificationBox {
   border: 2px solid #C2D6D6;
   padding:2px;
