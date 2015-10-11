@@ -104,9 +104,12 @@ a:hover{
   color: white;
 }
 .footer li{
-  padding: 3px;
-  max-width: 125px;
+  max-width: 120px;
   text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+.footer img {
 }
 .footer p{
   padding: 15px;
