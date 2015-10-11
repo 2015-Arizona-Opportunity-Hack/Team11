@@ -101,6 +101,6 @@ Router.route('/contact', function(){
   this.render('contact');
 });
 
-Router.route('/*', function(){
+Router.route('/spanish', function(){
   this.render('spanish');
 });
