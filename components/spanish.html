@@ -1,0 +1,76 @@
+<template name = "spanish">
+  <form class="new-alert">
+    <div class="col-lg-12">
+      <input type="text" name="text" placeholder="Escribe para crear una noticia nueva." style = "width: 100%;"/>
+    </div>
+        <div class="col-lg-12">
+          <div class="col-md-6 pull-left">
+            <input type="checkbox" name="urgent" value="urgente?"/> urgent
+          </div>
+          <div class="col-md-6 pull-right">
+            <input type="submit"/>
+          </div>
+        </div>
+        <br>
+        <br>
+      </form>
+      <!-- {{/if}} -->
+      <div class="notificationBox">
+        <p style = "font-size: 10px"> Notificaciones:
+        </p>
+        <!-- <ul> -->
+          {{#each alerts}}
+            {{> alert}}
+          {{/each}}
+        <!-- </ul> -->
+  </div>
+  <h2> ¡Bienvenido, Estudiantes y Padres!</h2>
+  <h3> En este sitio del web, se puede accesar...</h3>
+    <ul>
+      <li>
+        Todas las noticias urgentes y noticias menores del programa
+      </li>
+      <li>
+        Nuestro calendario de eventos
+      </li>
+      <li>
+        Nuestra información de contacto
+      </li>
+    </ul>
+    <h4> ¿Quiénes somos? </h4>
+    <p> ICAN amplia más que ser justo un programa después de la
+      escuela para los jovenes en peligros. ICAN trabaja con los
+      niños para mejorar sus habilidades criticales que necesitan
+      para ser miembros productivos y responsables de la comunidad.
+    </p>
+    <p>
+      8 de 10 personas jovenes en los áreas que servimos están viviendo
+      pobreza extrema. Cuatro de estos muchachos se dormirán hambre y
+      ocho de estos usarán drogas o alcohol para aguantar con sus
+      realidades duras que confrontan. Uniéndose pandillas se transforma
+      a una opción más viable que la graduación en la comunidad que servimos.
+      Esta no es una opción para ICAN. Existimos para combatir estos problemas
+      y crear futuros fuertes para ellos y para nuestra comunidad.
+    </p>
+    <div class = "row">
+      <div class = "calendarWidget col-xs-12 col-sm-6 col-md-6">
+        <iframe src="https://www.google.com/calendar/embed?mode=AGENDA&amp;height=270&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=6rt9e4nd0s5j50hqbedevdj3i8%40group.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FLos_Angeles" style=" border:solid 1px #777 " width="250" height="270" frameborder="0" scrolling="no">
+        </iframe>
+      </div>
+      <div class = "twitterWidget col-xs-8 col-sm-6 col-md-6">
+        <a class="twitter-timeline" href="https://twitter.com/ICANChandler"
+          data-widget-id="653046356978741248"
+          width="250">
+          Tweets by @ICANChandler
+        </a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </div>
+  </template>
+
+  <template name="alert">
+    <!-- <li> -->
+      <h3 style = "font-size: 10px; word-wrap: normal; color: black;">{{text}}</h3>
+      <p style = "font-size: 9px; word-wrap: normal; color: lightgray;">{{createdAt}}</p>
+    <!-- </li> -->
+  </template>
