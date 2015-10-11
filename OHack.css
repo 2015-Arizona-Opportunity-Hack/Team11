@@ -25,7 +25,10 @@ nav > li {
   /*width: 70px;*/
   color: #FFF !important;
 }
-
+.responsive-iframe-container{
+  overflow: auto;
+  max-width: 570px;
+}
 .header li {
   float: left;
 }
