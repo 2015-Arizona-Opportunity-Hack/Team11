@@ -26,6 +26,10 @@ nav > li {
   color: #FFF !important;
 }
 
+.header li {
+  float: left;
+}
+
 li {
   padding: 3px;
   margin: 1px;
@@ -101,6 +105,8 @@ a:hover{
 }
 .footer li{
   padding: 3px;
+  max-width: 125px;
+  text-align: center;
 }
 .footer p{
   padding: 15px;
