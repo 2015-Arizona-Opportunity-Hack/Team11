@@ -32,9 +32,9 @@ if (Meteor.isClient) {
 
   Template.home.events({
     "submit new-alert": function(event){
-      event.preventDefault();
+      // event.preventDefault();
       var text = event.target.text.value;
-
+      alert(text);
       Alerts.insert({
         text: text,
         createdAt: new Date()

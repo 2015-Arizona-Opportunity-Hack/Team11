@@ -1,11 +1,11 @@
 <template name="home">
-  {{#if currentUser}}
+  <!-- {{#if currentUser}} -->
   <form class="new-alert">
-    <!-- <input type="text" name="text" placeholder="Type to send new notification" style="width: 500px;" /> -->
-    <textarea rows='4' cols='70' placeholder="Type to send new notification"></textarea>
+    <input type="text" name="text" placeholder="Type to send new notification" style="width: 500px;" />
+    <!-- <textarea rows='4' cols='70' placeholder="Type to send new notification"></textarea> -->
     <input type="submit">
   </form>
-  {{/if}}
+  <!-- {{/if}} -->
   <div class="notificationBox">
     <p style = "font-size: 10px"> Notifications:
     </p>
@@ -22,10 +22,10 @@
       Any urgent and<a href="*" style = "color: black;"> non-urgent news about the program </a>
     </li>
     <li>
-      <a href = "*" style = "color: black;"> Our Events Calendar </a>
+      <a href = "/calendar" style = "color: black;"> Our Events Calendar </a>
     </li>
     <li>
-      <a href = "*" style = "color: black;"> Our Contact Information </a>
+      <a href = "/contact" style = "color: black;"> Our Contact Information </a>
     </li>
   </ul>
   <p><b> Who are we? </b></p>
