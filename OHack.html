@@ -10,9 +10,9 @@
   <script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   <div class = "container-fluid container">
-        <div class = "header">
-          <img src="http://www.taohealingcenters.org/images/ican.jpg" alt="ICAN Logo"/>
-        </div>
+    <div class = "header">
+      <img src="http://www.taohealingcenters.org/images/ican.jpg" alt="ICAN Logo"/>
+    </div>
 
     <nav class = "navbar navbar-default">
       <ul class = "nav navbar-nav">
@@ -38,24 +38,27 @@
     </nav>
 
     {{#if currentUser}}
-      <form class="new-task">
-        <input type="text" name="text" placeholder="Type to send new notification" style="width: 500px;" /><button>Send Notification</button>
-      </form>
+    <form class="new-task">
+      <input type="text" name="text" placeholder="Type to send new notification" style="width: 500px;" /><button>Send Notification</button>
+    </form>
     {{/if}}
 
-    {{#each alerts}}
-      {{> alert}}
-    {{/each}}
+
 
     <div class="notificationBox">
       <p style = "font-size: 10px"> Notifications:
       </p>
+      <ul>
+        {{#each alerts}}
+        {{> alert}}
+        {{/each}}
+      </ul>
     </div>
     <h3>Welcome Students and Parents!</h3>
     <h4>On this website, you'll be able to access... </h4>
     <ul>
       <li>
-      <a href="*" style = "color: black;">  Any non-urgent news about the program </a>
+        <a href="*" style = "color: black;">  Any non-urgent news about the program </a>
       </li>
       <li>
         <a href = "*" style = "color: black;"> Our Events Calendar </a>
@@ -68,60 +71,62 @@
     <p>ICAN goes beyond being just an after-school program for at-risk youth. ICAN works with youth on the critical skills they need to be productive and responsible members of the community.
     </p>
     <p>8 out of 10 young people in the areas we serve are living in extreme poverty. Four of those children will go to bed hungry at night and eight will be using drugs or alcohol to cope with the harsh realities they face. Joining gangs becomes a more viable choice than graduation in the community we serve.
-This is not an option for ICAN. We exist to combat these issues and build strong futures for them and for our community.
+      This is not an option for ICAN. We exist to combat these issues and build strong futures for them and for our community.
     </p>
     <div class = "row">
-    <div class = "twitterWidget col-xs-6 col-md-6">
-    <a class="twitter-timeline" href="https://twitter.com/ICANChandler"
-     data-widget-id="653046356978741248"
-     width="250">
-     Tweets by @ICANChandler
-    </a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-  </div>
+      <div class = "twitterWidget col-xs-6 col-md-6">
+        <a class="twitter-timeline" href="https://twitter.com/ICANChandler"
+        data-widget-id="653046356978741248"
+        width="250">
+        Tweets by @ICANChandler
+      </a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
     <div class = "calendarWidget col-xs-6 col-md-6">
 
     </div>
-</div>
-    <nav class = "navbar navbar-default">
-      <ul class = "nav navbar-nav footer">
-        <li>
-          <a href = "https://www.facebook.com/ICANAZ?fref=ts">
-            <img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/facebook-256.png" alt="facebookThumbnail" style = "width: 50px; height: 50px;"/>
-          </a>
-        </li>
-        <li>
-          <a href = "https://twitter.com/icanchandler">
-            <img src="http://www.ride24hr.com/uploads/twitter-icon2.png" alt="twitterThumbnail" style = "width: 50px; height: 50px;"/>
-          </a>
-        </li>
-        <li>
-          <a href = "https://plus.google.com/u/0/112268392666409549126/about">
-            <img src = "http://endstone.net/wp-content/uploads/2014/06/google-plus-icon-png-32-x-32.png" alt = "googlePlusIcon" style = "width: 50px; height: 50px;"/>
-          </a>
-        </li>
-        <li>
-          <a href = "https://www.linkedin.com/company/ican---positive-programs-for-youth?trk=nmp_rec_act_company_photo">
-            <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" alt = "linkedInIcon" style = "width: 50px; height: 50px;"/>
-          </a>
-        </li>
-        <li>
-          <p>650 E. Morelos St. Chandler, AZ, 85225</p>
-        </li>
-        <li>
-          <p>Tel: 480.821.4207</p>
-          <p>Fax: 480.821.6742</p>
-        </li>
-        <li>
-          <p>info@icanaz.org</p>
-        </li>
-      </ul>
-    </nav>
   </div>
+  <nav class = "navbar navbar-default">
+    <ul class = "nav navbar-nav footer">
+      <li>
+        <a href = "https://www.facebook.com/ICANAZ?fref=ts">
+          <img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/facebook-256.png" alt="facebookThumbnail" style = "width: 50px; height: 50px;"/>
+        </a>
+      </li>
+      <li>
+        <a href = "https://twitter.com/icanchandler">
+          <img src="http://www.ride24hr.com/uploads/twitter-icon2.png" alt="twitterThumbnail" style = "width: 50px; height: 50px;"/>
+        </a>
+      </li>
+      <li>
+        <a href = "https://plus.google.com/u/0/112268392666409549126/about">
+          <img src = "http://endstone.net/wp-content/uploads/2014/06/google-plus-icon-png-32-x-32.png" alt = "googlePlusIcon" style = "width: 50px; height: 50px;"/>
+        </a>
+      </li>
+      <li>
+        <a href = "https://www.linkedin.com/company/ican---positive-programs-for-youth?trk=nmp_rec_act_company_photo">
+          <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" alt = "linkedInIcon" style = "width: 50px; height: 50px;"/>
+        </a>
+      </li>
+      <li>
+        <p>650 E. Morelos St. Chandler, AZ, 85225</p>
+      </li>
+      <li>
+        <p>Tel: 480.821.4207</p>
+        <p>Fax: 480.821.6742</p>
+      </li>
+      <li>
+        <p>info@icanaz.org</p>
+      </li>
+    </ul>
+  </nav>
+</div>
 </body>
 
 <template name="alert">
-  <p>{{text}}</p>
-  <p>{{createdAt}}</p>
-</template>
+  <li>
+    <p style = "font-size: 10px; word-wrap: normal; color: red;">{{text}}</p>
+    <p style = "font-size: 10px; word-wrap: normal; color: lightgray;">{{createdAt}}</p>
+    <li>
+    </template>
