@@ -1,0 +1,75 @@
+<template name="main">
+<link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script>
+<script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<div class = "container-fluid container">
+  <div class = "header">
+    <img src="http://www.taohealingcenters.org/images/ican.jpg" alt="ICAN Logo"/>
+  </div>
+
+  <nav class = "navbar navbar-default">
+    <ul class = "nav navbar-nav">
+      <li id = "homeButton">
+        <a href="*">Home</a>
+      </li>
+      <li id = "newsButton">
+        <a href = "*">News</a>
+      </li>
+      <li id = "calendarButton">
+        <a href = "*">Calendar</a>
+      </li>
+      <li id = "contactButton">
+        <a href = "*">Contact Information</a>
+      </li>
+      <li id = "spanishButton">
+        <a href= "*">Español</a>
+      </li>
+      <li id = "login-buttonButton">
+        {{> loginButtons}}
+      </li>
+    </ul>
+  </nav>
+
+
+  {{> yield}}
+  <!-- <hr /> -->
+
+
+<nav class = "navbar navbar-default">
+<ul class = "nav navbar-nav footer">
+  <li>
+    <a href = "https://www.facebook.com/ICANAZ?fref=ts">
+      <img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/facebook-256.png" alt="facebookThumbnail" style = "width: 50px; height: 50px;"/>
+    </a>
+  </li>
+  <li>
+    <a href = "https://twitter.com/icanchandler">
+      <img src="http://www.ride24hr.com/uploads/twitter-icon2.png" alt="twitterThumbnail" style = "width: 50px; height: 50px;"/>
+    </a>
+  </li>
+  <li>
+    <a href = "https://plus.google.com/u/0/112268392666409549126/about">
+      <img src = "http://endstone.net/wp-content/uploads/2014/06/google-plus-icon-png-32-x-32.png" alt = "googlePlusIcon" style = "width: 50px; height: 50px;"/>
+    </a>
+  </li>
+  <li>
+    <a href = "https://www.linkedin.com/company/ican---positive-programs-for-youth?trk=nmp_rec_act_company_photo">
+      <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/768px-LinkedIn_logo_initials.png" alt = "linkedInIcon" style = "width: 50px; height: 50px;"/>
+    </a>
+  </li>
+  <li>
+    <p>Location:   650 E. Morelos St. Chandler, AZ, 85225</p>
+  </li>
+  <li>
+    <p>Tel: 480.821.4207</p>
+    <p>Fax: 480.821.6742</p>
+  </li>
+  <li>
+    <p>info@icanaz.org</p>
+  </li>
+</ul>
+</nav>
+</div>
+</template>

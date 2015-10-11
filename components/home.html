@@ -1,0 +1,50 @@
+<template name="home">
+  {{#if currentUser}}
+  <form class="new-alert">
+    <input type="text" name="text" placeholder="Type to send new notification" style="width: 500px;" /><button>Send Notification</button>
+  </form>
+  {{/if}}
+  <div class="notificationBox">
+    <p style = "font-size: 10px"> Notifications:
+    </p>
+    <ul>
+      {{#each alerts}}
+      {{> alert}}
+      {{/each}}
+    </ul>
+  </div>
+  <h3>Welcome Students and Parents!</h3>
+  <h4>On this website, you'll be able to access... </h4>
+  <ul>
+    <li>
+      Any urgent and<a href="*" style = "color: black;"> non-urgent news about the program </a>
+    </li>
+    <li>
+      <a href = "*" style = "color: black;"> Our Events Calendar </a>
+    </li>
+    <li>
+      <a href = "*" style = "color: black;"> Our Contact Information </a>
+    </li>
+  </ul>
+  <p><b> Who are we? </b></p>
+  <p>ICAN goes beyond being just an after-school program for at-risk youth. ICAN works with youth on the critical skills they need to be productive and responsible members of the community.
+  </p>
+  <p>8 out of 10 young people in the areas we serve are living in extreme poverty. Four of those children will go to bed hungry at night and eight will be using drugs or alcohol to cope with the harsh realities they face. Joining gangs becomes a more viable choice than graduation in the community we serve.
+    This is not an option for ICAN. We exist to combat these issues and build strong futures for them and for our community.
+  </p>
+  <div class = "row">
+    <div class = "calendarWidget col-xs-12 col-sm-6 col-md-6">
+      <iframe src="https://www.google.com/calendar/embed?mode=AGENDA&amp;height=270&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=6rt9e4nd0s5j50hqbedevdj3i8%40group.calendar.google.com&amp;color=%23853104&amp;ctz=America%2FLos_Angeles" style=" border:solid 1px #777 " width="250" height="270" frameborder="0" scrolling="no">
+      </iframe>
+    </div>
+    <div class = "twitterWidget col-xs-8 col-sm-6 col-md-6">
+      <a class="twitter-timeline" href="https://twitter.com/ICANChandler"
+        data-widget-id="653046356978741248"
+        width="250">
+        Tweets by @ICANChandler
+      </a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+  </div>
+</template>
