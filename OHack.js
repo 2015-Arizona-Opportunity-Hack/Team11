@@ -40,7 +40,23 @@ if (Meteor.isClient) {
         createdAt: new Date()
       });
 
+  Template.news.events({
+    "submit .new-article": function(event){
+      event.preventDefault();
+      var title = "New Article";
+      var text = event.target.text.value;
+
+      Articles.insert({
+        title: title,
+        text: text,
+        createdAt: new Date()
+      });
+    }
+  });
+
       // TODO: Send push notification
+
+      Push.enabled(true);
 
       Push.send({
         from: 'Test',
