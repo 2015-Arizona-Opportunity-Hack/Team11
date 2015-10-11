@@ -92,20 +92,19 @@ a:hover{
   padding: 5px;
 }
 .notificationBox {
-  border: 2px solid #C2D6D6;
+  border: 2px solid #EE3B34;
   padding:2px;
   height: 100px;
   margin: auto;
   top: 0;
   right: 405px;
-  max-width: 500px;
+  max-width: 100%;
   overflow-y: scroll;
 }
 #login-buttonButton{
-  background-color: #EE3B34;
   text-decoration: none;
   padding: 5px;
-  color: white;
+  color: black;
 }
 .footer li{
   max-width: 120px;
