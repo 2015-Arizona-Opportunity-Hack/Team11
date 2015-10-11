@@ -33,14 +33,22 @@ if (Meteor.isClient) {
   Template.home.events({
     "submit .new-alert": function(event){
       event.preventDefault();
-      var text = event.target.textarea.value;
-      alert(text);
+      var text = event.target.text.value;
+
       Alerts.insert({
         text: text,
         createdAt: new Date()
       });
 
       // TODO: Send push notification
+
+      Push.send({
+        from: 'Test',
+        title: 'Hello',
+        text: text,
+        badge: 1,
+        query: {}
+      });
 
       event.target.text.value = "";
     }
