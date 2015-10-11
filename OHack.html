@@ -9,7 +9,7 @@
   </script>
   <script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-  <div class = "container-fluid">
+  <div class = "container-fluid container">
     <div class = "row">
       <div class = "col-md-3 col-xs-6">
         <div class = "header">
@@ -40,8 +40,18 @@
         <li>
           <a href= "*">Español</a>
         </li>
+        <li>
+          {{> loginButtons}}
+        </li>
       </ul>
     </nav>
+
+    {{#if currentUser}}
+      <form class="new-task">
+        <input type="text" name="text" placeholder="Type to send new notification" style="width: 500px;" /><button>Send Notification</button>
+      </form>
+    {{/if}}
+
     <a class="twitter-timeline" href="https://twitter.com/ICANChandler"
      data-widget-id="653046356978741248"
      width="auto"
