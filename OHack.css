@@ -16,6 +16,9 @@ nav > ul {
   margin: 0px;
   padding: 0px;
 }
+nav > li {
+  float: left;
+}
 .nav > li > a {
   text-decoration: none;
   display: block;
@@ -48,7 +51,6 @@ a:hover{
   display: inline;
 }
 .header img {
-  padding: 5px;
   width: 144px;
   height: 64.5px;
   position: absolute;
@@ -90,6 +92,19 @@ a:hover{
   top: 0;
   right: 405px;
   max-width: 500px;
+}
+#login-buttonButton{
+  background-color: #EE3B34;
+  text-decoration: none;
+  padding: 5px;
+  color: white;
+}
+.footer li{
+  padding: 3px;
+}
+.footer p{
+  padding: 15px;
+  word-wrap: normal;
 }
 
 @media (max-width: 700px) and (orientation: landscape){
