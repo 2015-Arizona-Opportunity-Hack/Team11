@@ -48,7 +48,7 @@ a {
 a:hover{
   background-color: white;
   color: black;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .header {
   width: 225px;
