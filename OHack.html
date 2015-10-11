@@ -58,7 +58,7 @@
     <h4>On this website, you'll be able to access... </h4>
     <ul>
       <li>
-        <a href="*" style = "color: black;">  Any non-urgent news about the program </a>
+        Any urgent and<a href="*" style = "color: black;"> non-urgent news about the program </a>
       </li>
       <li>
         <a href = "*" style = "color: black;"> Our Events Calendar </a>
@@ -126,7 +126,13 @@
 
 <template name="alert">
   <li>
-    <p style = "font-size: 10px; word-wrap: normal; color: red;">{{text}}</p>
-    <p style = "font-size: 10px; word-wrap: normal; color: lightgray;">{{createdAt}}</p>
+    <p style = "font-size: 10px; word-wrap: normal; color: black;">{{text}}</p>
+    <p style = "font-size: 9px; word-wrap: normal; color: lightgray;">{{createdAt}}</p>
   </li>
     </template>
+
+<template name = "news">
+  <h3 style = "font-size: ">{{title}}</h3>
+  <p style = "font-size: 12px;">{{text}}</p>
+  <p>{{createdAt}}</p>
+</template>
