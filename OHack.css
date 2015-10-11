@@ -96,6 +96,7 @@ a:hover{
   top: 0;
   right: 405px;
   max-width: 500px;
+  overflow-y: scroll;
 }
 #login-buttonButton{
   background-color: #EE3B34;
@@ -130,4 +131,12 @@ a:hover{
   margin: 0 auto;
   min-height: 100%;
   background: white;
+}
+
+form{
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  /*min-height: 100%;*/
+  /*background: white;*/
 }

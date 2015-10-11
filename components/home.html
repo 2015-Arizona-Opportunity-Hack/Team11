@@ -1,17 +1,19 @@
 <template name="home">
   {{#if currentUser}}
   <form class="new-alert">
-    <input type="text" name="text" placeholder="Type to send new notification" style="width: 500px;" /><button>Send Notification</button>
+    <!-- <input type="text" name="text" placeholder="Type to send new notification" style="width: 500px;" /> -->
+    <textarea rows='4' cols='70' placeholder="Type to send new notification"></textarea>
+    <input type="submit">
   </form>
   {{/if}}
   <div class="notificationBox">
     <p style = "font-size: 10px"> Notifications:
     </p>
-    <ul>
+    <!-- <ul> -->
       {{#each alerts}}
         {{> alert}}
       {{/each}}
-    </ul>
+    <!-- </ul> -->
   </div>
   <h3>Welcome Students and Parents!</h3>
   <h4>On this website, you'll be able to access... </h4>
@@ -44,7 +46,13 @@
         Tweets by @ICANChandler
       </a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
   </div>
+</template>
+
+<template name="alert">
+  <!-- <li> -->
+    <p style = "font-size: 10px; word-wrap: normal; color: black;">{{text}}</p>
+    <p style = "font-size: 9px; word-wrap: normal; color: lightgray;">{{createdAt}}</p>
+  <!-- </li> -->
 </template>

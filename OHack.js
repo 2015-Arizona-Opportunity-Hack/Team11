@@ -1,5 +1,6 @@
 // Stories = new Mongo.Collection("stories");
 Alerts = new Mongo.Collection("alerts");
+Articles = new Mongo.Collection("articles");
 
 if (Meteor.isClient) {
   // counter starts at 0
@@ -17,13 +18,19 @@ if (Meteor.isClient) {
   //     Session.set('counter', Session.get('counter') + 1);
   //   }
   // });
-  Template.body.helpers({
+  Template.home.helpers({
     alerts: function(){
       return Alerts.find({});
     }
   });
 
-  Template.body.events({
+  Template.news.helpers({
+    articles: function(){
+        return Articles.find({});
+    }
+  });
+
+  Template.home.events({
     "submit new-alert": function(event){
       event.preventDefault();
       var text = event.target.text.value;
