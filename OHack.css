@@ -5,23 +5,19 @@ body {
   font-size: 12px;
   /*background-color: white;*/
 
-  background-color: #315481;
-  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+  background-color: #1568B4;
+  background-image: linear-gradient(to bottom, #1568B4, #1568B4 100%);
+
   background-attachment: fixed;
 
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  padding: 0;
-  margin: 0;
 }
-ul {
+nav > ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+}
+nav > li {
+  float: left;
 }
 .nav > li > a {
   text-decoration: none;
@@ -30,25 +26,39 @@ ul {
   color: #FFF !important;
 }
 
-li {
-  display: inline;
+.header li {
   float: left;
+}
+
+li {
+  padding: 3px;
+  margin: 1px;
+}
+p {
+  padding: 5px;
+  margin: 1px;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 a:hover{
   background-color: white;
   color: black;
   text-decoration: none;
 }
-header {
-  margin: auto;
+.header {
+  width: 225px;
+  height: 120px;
 }
 .topPart {
   display: inline;
 }
 .header img {
-  padding: 5px;
   width: 144px;
   height: 64.5px;
+  position: absolute;
+  top:18px;
 }
  .nav {
    text-decoration: none;
@@ -74,26 +84,45 @@ header {
   padding: 5px;
 }
 
+#spanishButton{
+  background-color: #BED73E;
+  padding: 5px;
+}
 .notificationBox {
   border: 2px solid #C2D6D6;
   padding:2px;
   height: 100px;
-  margin: 2px;
-  text-align: left;
+  margin: auto;
+  top: 0;
+  right: 405px;
+  max-width: 500px;
+}
+#login-buttonButton{
+  background-color: #EE3B34;
+  text-decoration: none;
+  padding: 5px;
+  color: white;
+}
+.footer li{
+  max-width: 120px;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+.footer img {
+}
+.footer p{
+  padding: 15px;
+  word-wrap: normal;
 }
 
-@media (max-width: 700px), handheld and (orientation: landscape){
+@media (max-width: 700px) and (orientation: landscape){
   .header img{
     width: 150px;
     height: 75px;
   }
-  .notificationBox{
-    width: 150px;
-    height: 75px;
-    font-size: 10px;
-  }
-}
 
+}
 .container {
   max-width: 600px;
   margin: 0 auto;
