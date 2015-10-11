@@ -10,16 +10,8 @@ body {
 */background-image: url("https://scontent-sjc2-1.xx.fbcdn.net/hphotos-xfa1/t31.0-8/11115609_10153321651556209_1710896137069926848_o.jpg");
   background-attachment: fixed;
 
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  padding: 0;
-  margin: 0;
 }
-ul {
+nav > ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
@@ -32,8 +24,16 @@ ul {
 }
 
 li {
-  display: inline;
-  float: left;
+  padding: 3px;
+  margin: 1px;
+}
+p {
+  padding: 5px;
+  margin: 1px;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 a:hover{
   background-color: white;
@@ -87,24 +87,18 @@ a:hover{
   padding:2px;
   height: 100px;
   margin: auto;
-  position: absolute;
   top: 0;
-  right: -5px;
+  right: 405px;
   max-width: 500px;
 }
 
-@media (max-width: 700px), handheld and (orientation: landscape){
+@media (max-width: 700px) and (orientation: landscape){
   .header img{
     width: 150px;
     height: 75px;
   }
-  .notificationBox{
-    width: 150px;
-    height: 75px;
-    font-size: 10px;
-  }
-}
 
+}
 .container {
   max-width: 600px;
   margin: 0 auto;
